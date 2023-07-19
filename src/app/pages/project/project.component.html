@@ -1,47 +1,23 @@
-
-
 <section class="events">
   <div class="container">
     <div class="session-title row">
-      <h2>Popular Causes</h2>
-      <p>We are a non-profital & Charity raising money for child education</p>
+      <h2>Our Work</h2>
+      <p class="paragraph-text">
+        "Protecting the environment and empowering children for a sustainable
+        future."
+      </p>
     </div>
     <div class="event-ro row">
-      <div class="col-md-4 col-sm-6">
-        <div class="event-box">
+      <div class="col-md-4 col-sm-6" *ngFor="let project of projectDetails">
+        <div class="event-box grid-item">
           <img src="assets/images/events/image_08.jpg" alt="" />
-          <h4>Child Education in Africa</h4>
+          <h4>{{ project.title }}</h4>
 
-          <p class="raises"><span>Raised : $34,425</span> / $500,000</p>
-          <p class="desic">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
+          <!-- <p class="raises"><span>Raised : $34,425</span> / $500,000</p> -->
+          <p class="paragraph-text">
+            {{ project.aboutWork }}
           </p>
-          <button class="btn btn-success btn-sm">Donate Now</button>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="event-box">
-          <img src="assets/images/events/image_06.jpg" alt="" />
-          <h4>Child Education in Africa</h4>
-          <p class="raises"><span>Raised : $34,425</span> / $500,000</p>
-          <p class="desic">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
-          </p>
-          <button class="btn btn-success btn-sm">Donate Now</button>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="event-box">
-          <img src="assets/images/events/image_04.jpg" alt="" />
-          <h4>Child Education in Africa</h4>
-          <p class="raises"><span>Raised : $34,425</span> / $500,000</p>
-          <p class="desic">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
-          </p>
-          <button class="btn btn-success btn-sm">Donate Now</button>
+          <!-- <button class="btn btn-success btn-sm">Show More</button> -->
         </div>
       </div>
     </div>

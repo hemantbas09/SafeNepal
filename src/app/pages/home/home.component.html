@@ -1,67 +1,16 @@
-<div class="slider">
-  <div class="owl-carousel">
-    <div class="slider-img">
-      <div class="item">
-        <div class="slider-img">
-          <img src="assets/images/slider/slider-3.jpg" alt="" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12"
-            >
-              <div class="animated bounceInDown slider-captions">
-                <h1 class="slider-title">Most Stylish Free Travel Website</h1>
-                <p class="slider-text hidden-xs">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="slider-img">
-        <img src="assets/images/slider/slider-1.jpg" alt="" />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12"
-          >
-            <div class="slider-captions">
-              <h1 class="slider-title">It's time for better help.</h1>
-              <p class="slider-text hidden-xs">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="slider-img">
-        <img src="assets/images/slider/slider-2.jpg" alt="" />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12"
-          >
-            <div class="slider-captions">
-              <h1 class="slider-title">Most Attractive Travel Template</h1>
-              <p class="slider-text hidden-xs">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="carousel-container slider-container">
+  <img
+    class="slider-image"
+    [src]="slides[currentSlideIndex].image"
+    alt="Carousel Slide"
+  />
+  <div class="carousel-buttons">
+    <button class="previous-btn" (click)="previousSlide()">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </button>
+    <button class="next-btn" (click)="nextSlide()">
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </button>
   </div>
 </div>
 
@@ -70,13 +19,15 @@
     <div class="row mission">
       <div class="col-md-6 mv-det">
         <h1>Our Mission</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque
-          libero, pulvinar et elementum quis, facilisis eu ante. Mauris non
-          placerat sapien. Pellentesque tempor arcu non odio scelerisque
-          ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Nam varius eros consequat auctor gravida. Fusce tristique lacus at
-          urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
+        <p class="paragraph-text">
+          "Our mission is clear: we are dedicated to protecting and preserving
+          the environment for the sake of future generations. We promote
+          sustainable practices and work to conserve our precious natural
+          resources. Through education, community involvement, and partnerships,
+          we strive to create a greener world where all living beings can thrive
+          together in harmony with nature. Our goal is to leave a positive and
+          lasting impact, ensuring a brighter, more sustainable future for
+          everyone."
         </p>
       </div>
       <div class="col-md-6 mv-img">
@@ -89,13 +40,16 @@
       </div>
       <div class="col-md-6 mv-det">
         <h1>Our Vision</h1>
-        <p>
-          Ut ultricies lacus a rutrum mollis. Orci varius natoque penatibus et
-          magnis dis parturient montes, nascetur ridiculus mus. Sed porta dolor
-          quis felis pulvinar dignissim. Etiam nisl ligula, ullamcorper non
-          metus vitae, maximus efficitur mi. Vivamus ut ex ullamcorper,
-          scelerisque lacus nec, commodo dui. Proin massa urna, volutpat vel
-          augue eget, iaculis tristique dui.
+        <p class="paragraph-text">
+          "Our vision is a thriving world, where nature flourishes, and
+          individuals embrace their role as Earth's stewards. We imagine
+          pristine ecosystems brimming with biodiversity, sustaining life
+          through clean air, pure water, and fertile soil. Through global
+          cooperation and collective action, humanity harmoniously coexists with
+          nature, safeguarding the environment for future generations. We aim to
+          leave a legacy of environmental preservation and sustainable
+          practices, uniting in a shared mission to create a greener, healthier
+          planet for all living beings."
         </p>
       </div>
     </div>
@@ -107,30 +61,14 @@
     <div class="container">
       <div class="row session-title">
         <h2>Our Achievemtns in Numbers</h2>
-        <p>
-          We can talk for a long time about advantages of our Dental clinic
-          before other medical treatment facilities. But you can read the
-          following facts in order to make sure of all pluses of our clinic:
+        <p class="paragraph-text">
+          🌿 4+ Years of Experience: With over four years of dedicated work, our
+          environmental NGO has been at the forefront of protecting and
+          preserving our planet, addressing critical environmental challenges.
         </p>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 numb">
-          <h3>12+</h3>
-          <span>YEARS OF EXPEREANCE</span>
-        </div>
-        <div class="col-sm-3 numb">
-          <h3>1812+</h3>
-          <span>HAPPY CHILDRENS</span>
-        </div>
-        <div class="col-sm-3 numb">
-          <h3>52+</h3>
-          <span>EVENTS</span>
-        </div>
-        <div class="col-sm-3 numb">
-          <h3>48+</h3>
-          <span>FUNT RAISED</span>
-        </div>
       </div>
     </div>
   </div>
 </div>
+
+<app-team></app-team>

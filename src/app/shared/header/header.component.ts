@@ -9,7 +9,7 @@ export class HeaderComponent {
   navList: Array<any> = [
     {
       navLink: 'events',
-      NavName: 'Upcoming Events',
+      NavName: 'Events',
     },
 
     {
@@ -17,8 +17,12 @@ export class HeaderComponent {
       NavName: 'Blogs',
     },
     {
+      navLink: 'home',
+      NavName: 'gallery',
+    },
+    {
       navLink: 'aboutus',
-      NavName: 'Aboutus',
+      NavName: 'About Us',
     },
     {
       navLink: 'contactus',
@@ -30,7 +34,7 @@ export class HeaderComponent {
       NavName: 'Our Works',
     },
     {
-      navLink: '',
+      navLink: 'home',
       NavName: 'Home',
     },
   ];

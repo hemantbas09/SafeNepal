@@ -1,71 +1,23 @@
-<section class="our-blog">
+<section class="events">
   <div class="container">
-    <div class="row session-title">
-      <h2>Our Blog</h2>
-      <p>Take a look at what people say about US</p>
+    <div class="session-title row">
+      <h2>Blogs</h2>
+      <p class="paragraph-text">
+        "Empowering children for a sustainable future through environmental
+        education and awareness."
+      </p>
     </div>
-    <div class="blog-row row">
-      <div class="col-md-4 col-sm-6">
-        <div class="single-blog">
-          <figure>
-            <img src="assets/images/events/image_01.jpg" alt="" />
-          </figure>
-          <div class="blog-detail">
-            <small>By Admin | August 10 2018</small>
-            <h4>Methods of Recuirtments</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              justo neque, aliquet sit amet elementum vel, vehicula eget eros.
-              Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque.
-              Praesent.
-            </p>
-            <div class="link">
-              <a href="">Read more </a
-              ><i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="single-blog">
-          <figure>
-            <img src="assets/images/events/image_02.jpg" alt="" />
-          </figure>
-          <div class="blog-detail">
-            <small>By Admin | August 10 2018</small>
-            <h4>Methods of Recuirtments</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              justo neque, aliquet sit amet elementum vel, vehicula eget eros.
-              Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque.
-              Praesent.
-            </p>
-            <div class="link">
-              <a href="">Read more </a
-              ><i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="single-blog">
-          <figure>
-            <img src="assets/images/events/image_03.jpg" alt="" />
-          </figure>
-          <div class="blog-detail">
-            <small>By Admin | August 10 2018</small>
-            <h4>Methods of Recuirtments</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              justo neque, aliquet sit amet elementum vel, vehicula eget eros.
-              Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque.
-              Praesent.
-            </p>
-            <div class="link">
-              <a href="">Read more </a
-              ><i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-          </div>
+    <div class="event-ro row">
+      <div class="col-md-4 col-sm-6" *ngFor="let project of projectDetails">
+        <div class="event-box grid-item">
+          <img src="assets/images/events/image_08.jpg" alt="" />
+          <h4>{{ project.title }}</h4>
+
+          <!-- <p class="raises"><span>Raised : $34,425</span> / $500,000</p> -->
+          <p class="paragraph-text">
+            {{ project.aboutWork }}
+          </p>
+          <!-- <button class="btn btn-success btn-sm">Show More</button> -->
         </div>
       </div>
     </div>

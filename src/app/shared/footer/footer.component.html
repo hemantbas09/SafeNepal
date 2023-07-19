@@ -3,38 +3,25 @@
     <div class="row">
       <div class="col-md-4 col-sm-12">
         <h2>About Us</h2>
-        <p>
-          Smart Eye is a leading provider of information technology, consulting,
-          and business process services. Our dedicated employees offer strategic
-          insights, technological expertise and industry experience.
-        </p>
-        <p>
-          We focus on technologies that promise to reduce costs, streamline
-          processes and speed time-to-market, Backed by our strong quality
-          processes and rich experience managing global...
+        <p class="paragraph-text">
+          Welcome to Safe Nepal 🌿🌍! Our mission: Protecting the environment
+          for a sustainable future. Passionate about conservation, we preserve
+          Nepal's diverse ecosystems 🌱. From the Himalayas to the rivers and
+          forests, we focus on biodiversity, climate action, and sustainability.
+          With impactful initiatives like tree planting 🌳 and awareness
+          campaigns, we make a difference in communities. Together, we create a
+          greener legacy for all. Join us on this transformative journey!
+          Safeguard Nepal, empower the future 💚🤝. Let's make a world of
+          difference!
         </p>
       </div>
       <div class="col-md-4 col-sm-12">
         <h2>Useful Links</h2>
-        <ul class="list-unstyled link-list">
+        <ul class="list-unstyled link-list" *ngFor="let list of navList">
           <li>
-            <a ui-sref="about" href="#/about">About us</a
-            ><i class="fa fa-angle-right"></i>
-          </li>
-          <li>
-            <a ui-sref="portfolio" href="#/portfolio">Portfolio</a
-            ><i class="fa fa-angle-right"></i>
-          </li>
-          <li>
-            <a ui-sref="products" href="#/products">Latest jobs</a
-            ><i class="fa fa-angle-right"></i>
-          </li>
-          <li>
-            <a ui-sref="gallery" href="#/gallery">Gallery</a
-            ><i class="fa fa-angle-right"></i>
-          </li>
-          <li>
-            <a ui-sref="contact" href="#/contact">Contact us</a
+            <a ui-sref="about" routerLink="{{ list.navLink }}">{{
+              list.NavName
+            }}</a
             ><i class="fa fa-angle-right"></i>
           </li>
         </ul>
@@ -42,32 +29,14 @@
       <div class="col-md-4 col-sm-12 map-img">
         <h2>Contact Us</h2>
         <address class="md-margin-bottom-40">
-          BlueDart <br />
-          Marthandam (K.K District) <br />
-          Tamil Nadu, IND <br />
-          Phone: +91 9159669599 <br />
-          Email: <a href="mailto:info@anybiz.com" class="">info@bluedart.in</a
+          Safe Nepal<br />
+          Pokhara- 15, Kaski, Nepal <br />
+          Phone: +977 9841119798 <br />
+          Email:
+          <a href="mailto: safenepal.iof@gmail.com" class="">
+            safenepal.iof@gmail.com</a
           ><br />
-          Web: <a href="smart-eye.html" class="">www.bluedart.in</a>
         </address>
-      </div>
-    </div>
-
-    <div class="nav-box row clearfix">
-      <div class="inner col-md-9 clearfix">
-        <ul class="footer-nav clearfix">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Servies</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="donate-link col-md-3">
-        <a href="donate.html" class="btn btn-primary"
-          ><span class="btn-title">Donate Now</span></a
-        >
       </div>
     </div>
   </div>
@@ -75,8 +44,8 @@
 <div class="copy">
   <div class="container">
     <a href="https://www.smarteyeapps.com/"
-      >2015 &copy; All Rights Reserved | Designed and Developed by
-      Smarteyeapps</a
+      >2023 &copy; All Rights Reserved | Designed and Developed by Green
+      Initiatives</a
     >
 
     <span>
