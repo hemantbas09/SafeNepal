@@ -1,0 +1,50 @@
+// Import any additional SCSS files here if needed
+
+// Define variables
+$loader-size: 50px;
+$loader-color: #007bff; // Change this to the desired color
+
+// Define styles
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; // Change this to the desired background color
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.loader {
+  border: 4px solid rgba($loader-color, 0.3);
+  border-top: 4px solid $loader-color;
+  border-radius: 50%;
+  width: $loader-size;
+  height: $loader-size;
+  animation: spin 2s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin: 0; // Remove default margin to prevent extra spacing
+}

@@ -5,13 +5,18 @@
         <div class="col-lg-6 d-none d-lg-block">
           <ul class="ulleft">
             <li>
+              <i class="fas fa-phone-volume"></i>
+              Pokhara- 15, Kaski, Nepal
+            </li>
+            <li>
               <i class="far fa-envelope"></i>
-              sales@smarteyeapps.com
-              <span>|</span>
+              <a href="mailto:safenepal.iof@gmail.com">
+                safenepal.iof@gmail.com</a
+              >
             </li>
             <li>
               <i class="fas fa-phone-volume"></i>
-              +876 987 666 5433
+              <a href="tel:+977 9841119798">9841119798</a>
             </li>
           </ul>
         </div>
@@ -22,13 +27,7 @@
               <i class="fab fa-facebook-square"></i>
             </li>
             <li>
-              <i class="fab fa-twitter-square"></i>
-            </li>
-            <li>
               <i class="fab fa-instagram"></i>
-            </li>
-            <li>
-              <i class="fab fa-linkedin"></i>
             </li>
           </ul>
         </div>
@@ -51,26 +50,11 @@
           </a>
         </div>
         <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
-          <ul class="navbad">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
+          <ul class="navbad" *ngFor="let list of navList">
             <li class="nav-item">
-              <a class="nav-link" href="about_us.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact_us.html">Contact US</a>
+              <a class="nav-link" routerLink="{{ list.navLink }}">{{
+                list.NavName
+              }}</a>
             </li>
           </ul>
         </div>
