@@ -1,0 +1,143 @@
+header {
+//   @include shado-1();
+//   background-color: #fff;
+//   width: 100%;
+//   z-index: 99;
+
+//   .logo {
+//     padding-top: 6px;
+//   }
+
+  .header-top {
+    background-color: #fff;
+    border-bottom: 1px solid #d3d7cea6;
+    padding: 7px;
+
+    .col-det {
+      .ulleft {
+        li {
+          float: left;
+          padding: 12px;
+          color: #686968;
+          font-size: 0.9rem;
+
+          i {
+            margin-right: 5px;
+            color: #bfbfbf;
+          }
+
+          span {
+            margin-left: 15px;
+          }
+        }
+      }
+
+      .ulright {
+        float: right;
+
+        li {
+          float: left;
+          padding: 10px;
+          color: #d3d7ce;
+          font-size: 1rem;
+          font-weight: 600;
+
+          i {
+            margin-right: 5px;
+            color: #8c8a8a;
+          }
+
+          small {
+            color: #8c8a8a;
+            font-weight: 600;
+          }
+
+          span {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+
+    .btn-bhed {
+      padding-top: 7px;
+      text-align: right;
+
+      .btn {
+        padding: 5px 23px;
+        border-radius: 50px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .header-bottom {
+    @media screen and (max-width: 991px) {
+      padding: 0px;
+    }
+
+    padding: 6px;
+    background-color: #fff;
+
+    img {
+      @media screen and (max-width: 991px) {
+        padding: 5px;
+        margin-top: 0px;
+        max-width: 230px;
+      }
+    }
+  }
+
+  .nav-col {
+    .navbad {
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+
+      display: block;
+      float: right;
+
+      li {
+        padding: 15px 15px;
+
+        @media screen and (max-width: 1005px) {
+          padding: 15px 12px;
+        }
+
+        font-weight: 700;
+        font-size: 0.9rem;
+        float: left;
+
+        @media screen and (max-width: 991px) {
+          float: none;
+          width: 100%;
+          padding: 10px;
+        }
+
+        a {
+          color: #686968 !important;
+          border: 1px solid #ccc;
+          border-radius: 50px;
+
+          &:hover {
+            // background-color: $color-primary;
+            color: #fff !important;
+          }
+        }
+      }
+
+      .nav-btn {
+        float: right;
+      }
+    }
+  }
+
+  .small-menu {
+    float: right;
+    color: #686968;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 13px;
+    top: 19px;
+  }
+}
