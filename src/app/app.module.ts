@@ -14,7 +14,7 @@ import { TeamComponent } from './pages/team/team.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ButtonComponent } from './shared/button/button.component';
 import { FooterComponent } from './shared/footer/footer.component';
-
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +32,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
