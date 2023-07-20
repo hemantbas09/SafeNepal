@@ -14,7 +14,7 @@ import { TeamComponent } from './pages/team/team.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ButtonComponent } from './shared/button/button.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
