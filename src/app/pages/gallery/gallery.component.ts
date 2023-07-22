@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 export class GalleryComponent {
   images: any[] = [
     {
-      url: '../../../assets/images/gallery/image-1.jpg',
+      url: 'assets/images/gallery/image-1.jpg',
       Title: 'item-1',
     },
     {
-      url: '../../../assets/images/gallery/image-2.jpg',
+      url: 'assets/images/gallery/image-2.jpg',
       Title: 'item-2',
     },
     {
