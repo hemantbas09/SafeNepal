@@ -1,0 +1,133 @@
+.wrapper {
+  max-width: 75rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 20rem);
+  gap: 0.5rem;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Gallery Link */
+.gallery__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Gallery Link Overlay */
+.gallery__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.gallery__link:hover .gallery__overlay {
+  opacity: 1;
+}
+
+/* Gallery Overlay Text */
+.gallery__overlay span {
+  position: relative;
+  line-height: 3rem;
+}
+
+.gallery__overlay span:before,
+.gallery__overlay span:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease-out 0.2s;
+}
+
+.gallery__overlay span:before {
+  top: 0;
+  left: 0;
+}
+
+.gallery__overlay span:after {
+  bottom: 0;
+  right: 0;
+}
+
+.gallery__link:hover .gallery__overlay span:before,
+.gallery__link:hover .gallery__overlay span:after {
+  width: 100%;
+}
+
+/* Gallery Image */
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 0.5s, filter 0.5s;
+}
+
+.gallery__link:hover .gallery__image {
+  transform: scale(1.2);
+  filter: blur(2px);
+}
+
+@media screen and (max-width: 60rem) {
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__overlay {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .gallery {
+    display: block;
+  }
+
+  .gallery__item {
+    margin: 0.5rem;
+  }
+
+  .gallery__link {
+    height: 80vw;
+  }
+
+  .gallery__overlay {
+    font-size: 1rem;
+  }
+}

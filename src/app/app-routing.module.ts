@@ -8,6 +8,7 @@ import { EventsComponent } from './pages/events/events.component';
 import { NewsComponent } from './pages/news/news.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { TeamComponent } from './pages/team/team.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'news', component: NewsComponent },
   { path: 'project', component: ProjectComponent },
   { path: 'team', component: TeamComponent },
+  { path: 'gallery', component: GalleryComponent },
 ];
 
 @NgModule({

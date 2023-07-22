@@ -17,8 +17,8 @@ export class HeaderComponent {
       NavName: 'Blogs',
     },
     {
-      navLink: 'home',
-      NavName: 'gallery',
+      navLink: 'gallery',
+      NavName: 'Gallery',
     },
     {
       navLink: 'aboutus',

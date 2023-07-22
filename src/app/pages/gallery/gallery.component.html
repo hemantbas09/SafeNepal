@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="gallery">
+    <div
+      *ngFor="let image of images"
+      [ngClass]="'gallery__link ' + image.classType"
+    >
+      <img [src]="image.url" [alt]="image.Title" class="gallery__image" />
+      <div class="gallery__overlay">
+        <!-- <span>{{ image.Title }}</span> -->
+      </div>
+    </div>
+  </div>
+</div>
