@@ -4,10 +4,10 @@ In an ever-changing world where environmental concerns and sustainable practices
 
 ## Tools and Technologies Used
 
-[![Angular](https://img.shields.io/badge/Angular-12-red)](https://angular.io/)
-[![HTML5](https://img.shields.io/badge/HTML5-blue)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-[![SCSS](https://img.shields.io/badge/SCSS-orange)](https://sass-lang.com/)
-[![CSS3](https://img.shields.io/badge/CSS3-blue)](https://www.w3.org/Style/CSS/Overview.en.html)
+[![Angular](https://img.shields.io/badge/Angular-12-red?style=for-the-badge&logo=angular)](https://angular.io/)
+[![HTML5](https://img.shields.io/badge/HTML5-blue?style=for-the-badge&logo=html5)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+[![SCSS](https://img.shields.io/badge/SCSS-orange?style=for-the-badge&logo=sass)](https://sass-lang.com/)
+[![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)](https://www.w3.org/Style/CSS/Overview.en.html)
 
 This project utilizes a combination of cutting-edge tools and technologies to deliver a dynamic and visually appealing web application. Below is an overview of the key tools and technologies used in the development of this project:
 
