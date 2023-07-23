@@ -24,9 +24,9 @@ This project delivers a dynamic web app with Angular at its core, complemented b
 
 ## Feedback
 Any suggestion and feedback is welcome. You can email us.
-- <a href = "mailto: prabiney.garcia.23@gmail.com"> Prabin's email!</a>
-- <a href = "mailto: hemantbasnet61@gmail.com"> Hemant's email!</a>
-- <a href = "mailto: itsroxen56@gmail.com"> Roshan's email!</a>
+- <a href = "mailto: prabiney.garcia.23@gmail.com"> Prabin's email</a>
+- <a href = "mailto: hemantbasnet61@gmail.com"> Hemant's email</a>
+- <a href = "mailto: itsroxen56@gmail.com"> Roshan's email</a>
 
 
 <!--This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
