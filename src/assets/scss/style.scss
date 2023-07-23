@@ -1,578 +1,560 @@
-
 /* ===================================== Import Variables ================================== */
-@import 'variable';
+@import "variable";
 /* ===================================== Basic CSS ==================================== */
-@import 'base/basic_setup';
+@import "base/basic_setup";
 
 /* =================== Header Style Starts Here =================== */
 header {
-    @include shado-1();
-    background-color: #FFF;
-    width: 100%;
-    z-index: 99;
+  @include shado-1();
+  background-color: #fff;
+  width: 100%;
+  z-index: 99;
 
-    .logo {
-        padding-top: 6px;
+  .logo {
+    padding-top: 6px;
+  }
+
+  .header-top {
+    background-color: #fff;
+    border-bottom: 1px solid #d3d7cea6;
+    padding: 7px;
+
+    .col-det {
+      .ulleft {
+        li {
+          float: left;
+          padding: 12px;
+          color: #686968;
+          font-size: 0.9rem;
+
+          i {
+            margin-right: 5px;
+            color: #bfbfbf;
+          }
+
+          span {
+            margin-left: 15px;
+          }
+        }
+      }
+
+      .ulright {
+        float: right;
+
+        li {
+          float: left;
+          padding: 10px;
+          color: #d3d7ce;
+          font-size: 1rem;
+          font-weight: 600;
+
+          i {
+            margin-right: 5px;
+            color: #8c8a8a;
+          }
+
+          small {
+            color: #8c8a8a;
+            font-weight: 600;
+          }
+
+          span {
+            margin-left: 15px;
+          }
+        }
+      }
     }
 
-    .header-top {
-        background-color: #fff;
-        border-bottom: 1px solid #d3d7cea6;
-        padding: 7px;
+    .btn-bhed {
+      padding-top: 7px;
+      text-align: right;
 
-        .col-det {
-            .ulleft {
-                li {
-                    float: left;
-                    padding: 12px;
-                    color: #686968;
-                    font-size: .9rem;
+      .btn {
+        padding: 5px 23px;
+        border-radius: 50px;
+        margin-left: 5px;
+      }
+    }
+  }
 
-                    i {
-                        margin-right: 5px;
-                        color: #bfbfbf;
-                    }
-
-                    span {
-                        margin-left: 15px;
-                    }
-                }
-            }
-
-            .ulright {
-                float: right;
-
-                li {
-                    float: left;
-                    padding: 10px;
-                    color: #d3d7ce;
-                    font-size: 1rem;
-                    font-weight: 600;
-
-                    i {
-                        margin-right: 5px;
-                        color: #8c8a8a;
-                    }
-
-                    small {
-                        color: #8c8a8a;
-                        font-weight: 600;
-                    }
-
-                    span {
-                        margin-left: 15px;
-                    }
-                }
-            }
-        }
-
-        .btn-bhed {
-            padding-top: 7px;
-            text-align: right;
-
-            .btn {
-                padding: 5px 23px;
-                border-radius: 50px;
-                margin-left: 5px;
-            }
-        }
-
+  .header-bottom {
+    @media screen and (max-width: 991px) {
+      padding: 0px;
     }
 
-    .header-bottom {
+    padding: 6px;
+    background-color: #fff;
+
+    img {
+      @media screen and (max-width: 991px) {
+        padding: 5px;
+        margin-top: 0px;
+        max-width: 230px;
+      }
+    }
+  }
+
+  .nav-col {
+    .navbad {
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+
+      display: block;
+      float: right;
+
+      li {
+        padding: 15px 15px;
+
+        @media screen and (max-width: 1005px) {
+          padding: 15px 12px;
+        }
+
+        font-weight: 700;
+        font-size: 0.9rem;
+        float: left;
 
         @media screen and (max-width: 991px) {
-            padding: 0px;
+          float: none;
+          width: 100%;
+          padding: 10px;
+
+        
         }
 
-        padding: 6px;
-        background-color: #fff;
+        a {
+          color: #686968;
+          border: 1px solid #ccc;
+          border-radius: 50px;
 
-        img {
-
-            @media screen and (max-width: 991px) {
-                padding: 5px;
-                margin-top: 0px;
-                max-width: 230px;
-            }
+          &:hover {
+            background-color: $color-primary;
+            color: #fff ;
+          }
         }
-    }
+      }
 
-    .nav-col {
-        .navbad {
-            @media screen and (max-width: 991px) {
-                width: 100%;
-            }
-
-            display: block;
-            float: right;
-
-            li {
-                padding: 15px 15px;
-
-                @media screen and (max-width: 1005px) {
-                    padding: 15px 12px;
-                }
-
-                font-weight: 700;
-                font-size: .9rem;
-                float: left;
-
-                @media screen and (max-width: 991px) {
-                    float: none;
-                    width: 100%;
-                    padding: 10px;
-
-                    a {
-                       
-                    }
-                }
-
-                a {
-                    color: #686968 !important;
-                    border: 1px solid #CCC;
-                    border-radius: 50px;
-
-                    &:hover {
-                        background-color: $color-primary;
-                        color: #fff !important;
-                    }
-
-                }
-            }
-
-            .nav-btn {
-
-                float: right;
-            }
-        }
-    }
-
-    .small-menu {
+      .nav-btn {
         float: right;
-        color: #686968;
-        font-size: 1.8rem;
-        position: absolute;
-        right: 13px;
-        top: 19px;
+      }
     }
+  }
+
+  .small-menu {
+    float: right;
+    color: #686968;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 13px;
+    top: 19px;
+  }
 }
 
 .navbar {
-
-    @media screen and (max-width: 767px) {
-        padding: 0px;
-    }
+  @media screen and (max-width: 767px) {
+    padding: 0px;
+  }
 }
 
 .navbar-toggler {
-    position: absolute;
-    right: 0px;
-    top: -40px;
+  position: absolute;
+  right: 0px;
+  top: -40px;
 
-    @media screen and (max-width: 767px) {
-        top: -50px;
-
-
-    }
+  @media screen and (max-width: 767px) {
+    top: -50px;
+  }
 }
 
 .scroll-to-fixed-fixed {
-    background-color: #FFF;
-    @include shado-1();
+  background-color: #fff;
+  @include shado-1();
 }
 
 .scroll-to-fixed-fixed {
-    padding: 5px !important;
+  padding: 5px !important;
 }
-
-
-
-
 
 /* ===================================== About CSS ================================== */
 
 .about-us {
-    background-color: #edf1f5;
-    @include big-padding();
+  background-color: #edf1f5;
+  @include big-padding();
 
-    .natur-row {
-        margin-top: 20px;
+  .natur-row {
+    margin-top: 20px;
+  }
+
+  .text-part {
+    h2 {
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
     }
 
-    .text-part {
-        h2 {
-            font-weight: 600;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
+    p {
+      text-indent: 20px;
+      margin-bottom: 15px;
+      line-height: 27px;
+      font-weight: 500;
+      text-align: justify;
+      font-size: 0.9rem;
+    }
+  }
+
+  .image-part {
+    .about-quick-box {
+      .about-qcard {
+        padding: 50px 30px;
+        background-color: #fff;
+        @include shado-4();
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 30px;
 
         p {
-            text-indent: 20px;
-            margin-bottom: 15px;
-            line-height: 27px;
-            font-weight: 500;
-            text-align: justify;
-            font-size: .9rem;
+          font-weight: 600;
+          font-size: 1.2rem;
         }
 
-    }
-
-    .image-part {
-        .about-quick-box {
-            .about-qcard {
-                padding: 50px 30px;
-                background-color: #FFF;
-                @include shado-4();
-                border-radius: 15px;
-                text-align: center;
-                margin-bottom: 30px;
-
-                p {
-                    font-weight: 600;
-                    font-size: 1.2rem;
-
-                }
-
-                i {
-                    font-size: 3rem;
-                    margin-bottom: 30px;
-                    color: #3cc88f;
-                }
-
-                .red {
-                    color: #ff6b70;
-                }
-
-                .yell {
-                    color: #f7a900;
-                }
-
-                .blu {
-                    color: #21d7d9;
-                }
-            }
+        i {
+          font-size: 3rem;
+          margin-bottom: 30px;
+          color: #3cc88f;
         }
+
+        .red {
+          color: #ff6b70;
+        }
+
+        .yell {
+          color: #f7a900;
+        }
+
+        .blu {
+          color: #21d7d9;
+        }
+      }
     }
+  }
 }
-
 
 /* ===================================== Events Home CSS ================================== */
 .events {
-    background-color: #efefef2e;
-    padding: 50px;
+  background-color: #efefef2e;
+  padding: 50px;
 }
 
 @media screen and (max-width: 940px) {
-    .events {
-        padding: 30px 10px;
-    }
+  .events {
+    padding: 30px 10px;
+  }
 }
 
 .events .event-ro .event-box {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .events .event-ro .event-box img {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .events .event-ro .event-box h4 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .events .event-ro .event-box .raises {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .events .event-ro .event-box .raises span {
-    color: #71b61b;
+  color: #71b61b;
 }
 
 .events .event-ro .event-box .desic {
-    font-size: 13px;
-    margin-bottom: 15px;
+  font-size: 13px;
+  margin-bottom: 15px;
 }
 
 /* ===================================== Mission Vision CSS ================================== */
 
 .mission-vision {
-    background-color: #FFF;
+  background-color: #fff;
 
-    .mission {
-        @include big-padding();
-    }
+  .mission {
+    @include big-padding();
+  }
 
-    .vision {
-        @include big-padding();
-    }
+  .vision {
+    @include big-padding();
+  }
 
-    .mv-det {
-        margin: auto;
-    }
+  .mv-det {
+    margin: auto;
+  }
 }
 
 /* ===================================== Charity Number CSS ================================== */
 .doctor-message {
-    background-image: url("../images/slider/slider-2.jpg");
-    background-attachment: fixed;
-    background-size: cover;
+  background-image: url("../images/slider/slider-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 
-    .session-title h2 {
-        color: #FFF;
-    }
+  .session-title h2 {
+    color: #fff;
+  }
 }
 
 .doctor-message .inner-lay {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 50px;
-    color: #FFF;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  color: #fff;
 }
 
 @media screen and (max-width: 940px) {
-    .doctor-message .inner-lay {
-        padding: 30px 10px;
-    }
+  .doctor-message .inner-lay {
+    padding: 30px 10px;
+  }
 }
 
 .doctor-message .inner-lay .numb {
-    text-align: center;
-    padding: 30px;
+  text-align: center;
+  padding: 30px;
 }
 
 .doctor-message .inner-lay .numb h3 {
-    font-size: 42px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #CCC;
-    margin-bottom: 20px;
-    color: #FFF;
+  font-size: 42px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  color: #fff;
 }
-
 
 /* ===================================== Our Blog CSS ================================== */
 .our-blog {
-    background-color: #FDFDFD;
-    padding: 40px;
+  background-color: #fdfdfd;
+  padding: 40px;
 }
 
 @media screen and (max-width: 967px) {
-    .our-blog {
-        padding: 30px 0px;
-    }
+  .our-blog {
+    padding: 30px 0px;
+  }
 }
 
 .our-blog .single-blog {
-    margin-bottom: 20px;
-    background-color: #FFF;
-    box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65),
+    0 2px 6px 0 rgba(206, 206, 238, 0.54);
 }
 
 .our-blog .single-blog figure {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .our-blog .single-blog .blog-detail {
-    padding: 15px;
+  padding: 15px;
 }
 
 .our-blog .single-blog small {
-    color: #71b61b;
-    font-size: 12px;
+  color: #71b61b;
+  font-size: 12px;
 }
 
 .our-blog .single-blog h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .our-blog .single-blog p {
-    text-align: justify;
-    text-indent: 20px;
+  text-align: justify;
+  text-indent: 20px;
 }
 
 .our-blog .single-blog .link a {
-    font-size: 12px;
-    color: #71b61b;
+  font-size: 12px;
+  color: #71b61b;
 }
 
 .our-blog .single-blog .link i {
-    padding-top: 6px;
-    margin-left: 5px;
-    color: #FFFFFF;
+  padding-top: 6px;
+  margin-left: 5px;
+  color: #ffffff;
 }
-
 
 /* ===================================== Fooer CSS ================================== */
 .footer {
-    padding: 50px;
-    padding-bottom: 50px;
-    background-color: #1e2436;
-    color: #FFF;
+  padding: 50px;
+  padding-bottom: 50px;
+  background-color: #1e2436;
+  color: #fff;
 }
 
 @media screen and (max-width: 940px) {
-    .footer {
-        padding: 30px 10px;
-    }
+  .footer {
+    padding: 30px 10px;
+  }
 }
 
 .footer h2 {
-    font-size: 26px;
-    margin-top: 10px;
-    color: #FFF;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+  font-size: 26px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
 
 .footer p {
-    text-align: justify;
-    text-indent: 20px;
-    font-size: .9rem;
+  text-align: justify;
+  text-indent: 20px;
+  font-size: 0.9rem;
 }
 
 .footer .link-list li {
-    padding: 10px;
-    border-bottom: 1px solid #6C6C6C;
-    font-size: .9rem;
+  padding: 10px;
+  border-bottom: 1px solid #6c6c6c;
+  font-size: 0.9rem;
 }
 
 .footer .link-list li a {
-    color: #FFF;
+  color: #fff;
 }
 
 .footer .link-list li i {
-    float: right;
+  float: right;
 }
 
 .footer .map-img {
-    font-weight: 600;
-    font-size: 17px;
-    padding-left: 20px;
+  font-weight: 600;
+  font-size: 17px;
+  padding-left: 20px;
 }
 
 .footer address {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .footer address a {
-    color: #FFF;
-    font-size: 1rem;
-    font-family: "mouse-300", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "mouse-300", Arial, Helvetica, sans-serif;
 }
 
 .copy {
-    padding: 20px;
-   background: #1a202f;
-    color: #FFF;
+  padding: 20px;
+  background: #1a202f;
+  color: #fff;
 }
 
 .copy a {
-    color: #FFF;
+  color: #fff;
 }
 
 .copy span {
-    float: right;
+  float: right;
 }
 
 .copy span i {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .kf-2 {
-    background-color: #FCFCFC;
-    padding: 50px;
+  background-color: #fcfcfc;
+  padding: 50px;
 }
 
 @media screen and (max-width: 940px) {
-    .kf-2 {
-        padding: 30px 10px;
-    }
+  .kf-2 {
+    padding: 30px 10px;
+  }
 }
 
 .kf-2 .single-key {
-    box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
+  box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35),
+    0 0px 3px 0 rgba(206, 206, 238, 0.35);
 }
-
 
 /* ===================================== Our Team Starts Here ===================================== */
 .our-team {
-    @include big-padding();
-    background-color: #cccccc1c;
+  @include big-padding();
+  background-color: #cccccc1c;
 
-    .team-row {
-        margin-top: 20px;
+  .team-row {
+    margin-top: 20px;
 
-        .single-usr {
-            @include shado-3();
-            margin-bottom: 20px;
+    .single-usr {
+      @include shado-3();
+      margin-bottom: 20px;
 
-            img {
-                width: 100%;
-            }
+      img {
+        width: 100%;
+      }
 
-            .det-o {
-                padding: 20px;
-                background-color: $color-primary;
+      .det-o {
+        padding: 20px;
+        background-color: $color-primary;
 
-                h4 {
-                    color: #FFF;
-                    margin-bottom: 0px;
-                    font-size: 1.1rem;
-                    font-weight: 600;
-                }
-
-                i {
-                    color: #FFF;
-                    font-size: .8rem;
-                }
-            }
-
+        h4 {
+          color: #fff;
+          margin-bottom: 0px;
+          font-size: 1.1rem;
+          font-weight: 600;
         }
+
+        i {
+          color: #fff;
+          font-size: 0.8rem;
+        }
+      }
     }
+  }
 }
 
-
-.nav-box{
-    margin-top: 50px;
+.nav-box {
+  margin-top: 50px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  ul {
+    li {
+      float: left;
+      padding: 15px;
+      a {
+        color: #ffff;
+      }
+    }
+  }
+  .btn {
+    margin-top: 7px;
+    float: right;
     border-radius: 50px;
-    border: 1px solid #ccc;
-    ul{
-        li{
-            float: left;
-            padding: 15px;
-            a{
-                color: #FFFF;
-            }
-        }
-    }
-    .btn{
-        margin-top: 7px;
-        float: right;
-        border-radius: 50px;
-    }
+  }
 }
-
 
 /* ===================================== Gallery Style  ================================== */
 .gallery-filter {
   width: 100%;
-  text-align: center; }
-  .gallery-filter .btn {
-    background-color: #FFF; }
+  text-align: center;
+}
+.gallery-filter .btn {
+  background-color: #fff;
+}
 
 .gallery {
-    @include big-padding();
+  @include big-padding();
   padding: 30px;
-  background-color: #FFF; }
+  background-color: #fff;
+}
 
 .gallery-title {
   font-size: 36px;
   color: #00ab9f;
   text-align: center;
   font-weight: 500;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+}
 
 .gallery-title:after {
   content: "";
@@ -580,7 +562,8 @@ header {
   width: 7.5%;
   left: 46.5%;
   height: 45px;
-  border-bottom: 1px solid $color-primary; }
+  border-bottom: 1px solid $color-primary;
+}
 
 .filter-button {
   font-size: 18px;
@@ -588,7 +571,8 @@ header {
   border-radius: 5px;
   text-align: center;
   color: $color-primary;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 .filter-button:hover {
   font-size: 18px;
@@ -596,16 +580,18 @@ header {
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
-  background-color: $color-primary; }
+  background-color: $color-primary;
+}
 
 .btn-default:active .filter-button:active {
   background-color: $color-primary;
-  color: white; }
+  color: white;
+}
 
 .port-image {
-  width: 100%; }
+  width: 100%;
+}
 
 .gallery_product {
-  margin-bottom: 30px; }
-
-
+  margin-bottom: 30px;
+}

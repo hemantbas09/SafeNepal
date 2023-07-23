@@ -26,7 +26,9 @@
           <ul class="ulright">
             <li><small>Folow Us </small>:</li>
             <li>
-              <a href="https://www.facebook.com/safenepal.iof/"> <i class="fab fa-facebook-square"> </i></a>
+              <a href="https://www.facebook.com/safenepal.iof/">
+                <i class="fab fa-facebook-square"> </i
+              ></a>
             </li>
             <li>
               <i class="fab fa-instagram"></i>
@@ -34,10 +36,10 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 d-none d-md-block col-md-6 btn-bhed">
+        <!-- <div class="col-lg-3 d-none d-md-block col-md-6 btn-bhed">
           <button class="btn btn-sm btn-success">Join Us</button>
           <button class="btn btn-sm btn-default">Donate</button>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -54,8 +56,8 @@
         </div>
         <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
           <ul class="navbad" *ngFor="let list of navList">
-            <li class="nav-item">
-              <a class="nav-link" routerLink="{{ list.navLink }}">{{
+            <li class="nav-item" routerLinkActive="active-menuItem" >
+              <a class="nav-link" routerLink="{{ list.navLink }}" routerLinkActive="active-link">{{
                 list.NavName
               }}</a>
             </li>
