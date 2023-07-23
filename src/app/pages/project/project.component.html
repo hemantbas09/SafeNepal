@@ -10,7 +10,9 @@
     <div class="event-ro row">
       <div class="col-md-4 col-sm-6" *ngFor="let project of projectDetails">
         <div class="event-box grid-item">
-          <img src="assets/images/events/image_08.jpg" alt="" />
+          <div class="project-image-container">
+            <img class="project-image" [src]="project.image" alt="" />
+          </div>
           <h4>{{ project.title }}</h4>
 
           <!-- <p class="raises"><span>Raised : $34,425</span> / $500,000</p> -->
