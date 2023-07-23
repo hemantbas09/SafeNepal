@@ -9,6 +9,7 @@ import { NewsComponent } from './pages/news/news.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { TeamComponent } from './pages/team/team.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { ContributionComponent } from './pages/contribution/contribution.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'project', component: ProjectComponent },
   { path: 'team', component: TeamComponent },
   { path: 'gallery', component: GalleryComponent },
+  { path: 'contribution', component: ContributionComponent },
 ];
 
 @NgModule({

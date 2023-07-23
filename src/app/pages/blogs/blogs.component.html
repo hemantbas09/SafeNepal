@@ -10,11 +10,16 @@
     <div class="event-ro row">
       <div class="col-md-6 col-sm-6" *ngFor="let project of projectDetails">
         <div class="event-box grid-item">
-          <img src="assets/images/events/image_08.jpg" alt="" />
-          <h4>{{ project.title }}</h4>
+          <img [src]="project.image" alt="" />
+          <div class="blog-date-writer">
+            <h6>{{ project.blogger }}</h6>
+            <h6>{{ project.date }}</h6>
+          </div>
+
+          <h4 class="blog-title" style="white-space: pre-wrap">{{ project.title }}</h4>
 
           <!-- <p class="raises"><span>Raised : $34,425</span> / $500,000</p> -->
-          <p class="paragraph-text">
+          <p class="paragraph-text" style="white-space: pre-wrap">
             {{ project.aboutWork }}
           </p>
           <!-- <button class="btn btn-success btn-sm">Show More</button> -->

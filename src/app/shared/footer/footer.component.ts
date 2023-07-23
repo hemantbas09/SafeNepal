@@ -21,8 +21,8 @@ export class FooterComponent {
       NavName: 'Blogs',
     },
     {
-      navLink: 'home',
-      NavName: 'gallery',
+      navLink: 'gallery',
+      NavName: 'Gallery',
     },
     {
       navLink: 'aboutus',

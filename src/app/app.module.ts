@@ -16,6 +16,7 @@ import { ButtonComponent } from './shared/button/button.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { ContributionComponent } from './pages/contribution/contribution.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
     ButtonComponent,
     FooterComponent,
     GalleryComponent,
+    ContributionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
