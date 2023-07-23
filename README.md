@@ -11,15 +11,11 @@ In an ever-changing world where environmental concerns and sustainable practices
 
 This project utilizes a combination of cutting-edge tools and technologies to deliver a dynamic and visually appealing web application. Below is an overview of the key tools and technologies used in the development of this project:
 
-1. **Angular 12**: Angular is a powerful and widely-used framework for building dynamic and scalable web applications. It enables the development of single-page applications (SPAs) and facilitates the use of reusable components, making code modular and maintainable.
-
-2. **HTML5**: HTML5 is the latest version of the HyperText Markup Language, which is the standard markup language for structuring content on the web. It provides enhanced semantic elements and better support for multimedia, ensuring a rich user experience.
-
-3. **SCSS (Sass)**: SCSS (Sassy CSS) is a popular extension of CSS that offers a more organized and efficient way to write stylesheets. With features like variables, nesting, and mixins, SCSS simplifies the styling process and improves code readability.
-
-4. **CSS3**: CSS3 is the latest version of Cascading Style Sheets, a fundamental technology used for styling web pages. It introduces advanced features such as animations, transitions, and flexbox layouts, enabling developers to create visually engaging interfaces.
-
-By leveraging these cutting-edge tools and technologies, this project delivers a robust, responsive, and user-friendly web application built with Angular at its core and enhanced with modern HTML, SCSS, and CSS techniques.
+1. **Angular 12**: A powerful framework for scalable web applications, enabling SPAs and reusable components.
+2. **HTML5**: The latest markup language with enhanced semantics for a rich user experience.
+3. **SCSS (Sass)**: An organized and efficient CSS extension with variables and mixins.
+4. **CSS3**: Introduces advanced styling features like animations and flexbox layouts.
+This project delivers a dynamic web app with Angular at its core, complemented by modern HTML, SCSS, and CSS techniques for a responsive and visually appealing user interface.
 
 ## Contributors
 - [Prabin Thapa Magar](https://github.com/prabinay/)
