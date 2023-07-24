@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +11,6 @@ export class HeaderComponent {
       navLink: 'events',
       NavName: 'Events',
     },
-
     {
       navLink: 'blogs',
       NavName: 'Blogs',
@@ -28,7 +27,6 @@ export class HeaderComponent {
       navLink: 'contactus',
       NavName: 'Contact Us',
     },
-
     {
       navLink: 'project',
       NavName: 'Our Works',
@@ -38,4 +36,29 @@ export class HeaderComponent {
       NavName: 'Home',
     },
   ];
+
+  isMenuOpen: boolean = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    if (this.isMenuOpen) {
+      this.disableScroll();
+    } else {
+      this.enableScroll();
+    }
+  }
+
+  @HostListener('window:keydown.escape')
+  closeMenu() {
+    this.isMenuOpen = false;
+    this.enableScroll();
+  }
+
+  disableScroll() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  enableScroll() {
+    document.body.style.overflow = 'auto';
+  }
 }

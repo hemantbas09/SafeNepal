@@ -47,14 +47,15 @@
   <div id="menu-jk" class="header-bottom">
     <div class="container">
       <div class="row nav-row">
-        <div class="col-lg-3 col-md-12 logo">
+        <div class="mobile-header">
           <a routerLink="home">
-            <img class="logo" src="../../../assets/images/logo.svg" alt="" />
-            <a data-toggle="collapse" data-target="#menu" href="#menu"
-              ><i class="fas d-block d-lg-none small-menu fa-bars"></i
-            ></a>
+            <img class="logo" src="assets/images/logo.svg" alt="" />
           </a>
+          <a class="" (click)="toggleMenu()"
+            ><i class="fas d-block d-lg-none small-menu fa-bars"></i
+          ></a>
         </div>
+
         <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
           <ul class="navbad" *ngFor="let list of navList">
             <li class="nav-item" routerLinkActive="active-menuItem">
@@ -66,6 +67,24 @@
               >
             </li>
           </ul>
+        </div>
+        <div *ngIf="isMenuOpen" class="mobile-menu">
+          <div id="menu" class="col-lg-9 col-md-12 d-lg-block nav-col">
+            <ul class="navbad" *ngFor="let list of navList">
+              <li
+                class="nav-item"
+                routerLinkActive="active-menuItem"
+                (click)="closeMenu()"
+              >
+                <a
+                  class="nav-link"
+                  routerLink="{{ list.navLink }}"
+                  routerLinkActive="active-link"
+                  >{{ list.NavName }}</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
