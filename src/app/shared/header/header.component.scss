@@ -27,6 +27,18 @@
     margin-right: 10px;
   }
 }
+.header-top-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-header-text{
+font-size: 16px;
+line-height: 24px;
+color: green;
+}
 @media screen and (max-width: 572px) {
   .mobile-menu {
     z-index: 10;
